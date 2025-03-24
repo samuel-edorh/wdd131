@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="SamuelEdorh">
+    <meta name="description" content="Place aasignment">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+        <picture>
+            <source srcset="images/9ja-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/9ja-medium.webp" media="(min-width: 550px)">
+            <img src="images/9ja-small.webp" alt="F.C.T" width="100%">
+        </picture>
+    <div class="data-box">
+        <h2>Data</h2>
+        <ul>
+            <li><strong>Area:</strong> 923,769 sq km</li>
+            <li><strong>Population:</strong> 236,169,234</li>
+            <li><strong>Capital:</strong> Abuja</li>
+            <li><strong>Languages:</strong> English, Yoruba, Igbo, Hausa</li>
+            <li><strong>Currency:</strong> Naira</li>
+            <li><strong>Time Zone:</strong> UTC+1</li>
+            <li><strong>Calling Code:</strong> +234</li>
+            <li><strong>Internet TLD:</strong> .ng</li>
+        </ul>
+    </div>
+    <div class="weather-box">
+        <h2>Weather <span class="weather-icon">⛅</span></h2>
+        <p><strong>Temperature:</strong> 10°C</p>
+        <p><strong>Conditions:</strong> Partly Cloudy</p>
+        <p><strong>Wind:</strong> 5 km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span></p>
+    </div>
+    </header>
+    <footer>
+        <p>©<span id="year"></span> 🌍 Samuel Gbenga Edorh 🌍 Nigeria</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    </body>
+    
+    </html>
