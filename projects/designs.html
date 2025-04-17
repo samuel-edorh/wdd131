@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swanzy Buildings | Designs</title>
+    <meta name="description" content="View our building designs and estimates" />
+    <meta name="author" content="Samuel Gbenga Edorh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/building.css" />
+    <script src="scripts/building.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo1.png" alt="Building Logo" loading="lazy" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="designs.html">Designs</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="register.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Our Building Designs</h1>
+
+        <section class="designs">
+            <article>
+                <img src="images/house3.jpg" alt="Duplex" loading="lazy" />
+                <h2>Duplex</h2>
+                <p>A spacious and modern family-friendly duplex design, perfect for comfort and class.</p>
+            </article>
+
+            <article>
+                <img src="images/house 5.jpg" alt="Villa" loading="lazy" />
+                <h2>Villa</h2>
+                <p>Luxury living in style — elegant architecture meets premium lifestyle.</p>
+            </article>
+
+            <article>
+                <img src="images/house4.jpg" alt="Three Storey Building" loading="lazy" />
+                <h2>Three Storey Building</h2>
+                <p>Ideal for commercial or residential use. Maximizes space with a beautiful vertical layout.</p>
+            </article>
+        </section>
+
+        <section class="designs-table">
+            <h2>Building Estimates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Building Type</th>
+                        <th>Max Duration</th>
+                        <th>Estimated Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bungalow</td>
+                        <td>7 months</td>
+                        <td>$20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Villa</td>
+                        <td>8 months</td>
+                        <td>$100,000</td>
+                    </tr>
+                    <tr>
+                        <td>Duplex</td>
+                        <td>8 months</td>
+                        <td>$70,000</td>
+                    </tr>
+                    <tr>
+                        <td>Skyscraper</td>
+                        <td>12 months</td>
+                        <td>$200,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="copyright"></span> 💫Swanzy Buildings💫 Nigeria</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://facebook"><img src="images/facebook.jpg" alt="Facebook" /></a>
+            <a href="https://instagram"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="https://threads"><img src="images/x.jpg" alt="Threads" /></a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById("copyright").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

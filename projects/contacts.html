@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swanzy Buildings | Contact</title>
+    <meta name="description" content="Get in touch with Swanzy Buildings" />
+    <meta name="author" content="Samuel Gbenga Edorh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/building.css" />
+    <script src="scripts/building.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo1.png" alt="Building Logo" loading="lazy" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="designs.html">Designs</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="register.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <section>
+            <p>📍 Ikeja, Lagos, Nigeria</p>
+            <p>📞 +2349051440212</p>
+            <p>📧 <a href="mailto:samueledorh22@gmail.com">samueledorh22@gmail.com</a></p>
+        </section>
+
+        <section class="map">
+            <h2>Visit Us</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126845.9693230693!2d3.2811265300989003!3d6.529699313589289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9228fa2a3999%3A0xd7a8324bddbba1f0!2sIkeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1739038235158!5m2!1sen!2sng"
+                width="100%" height="400" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Our Team</h2>
+            <div class="employee-container">
+                <div class="employee">
+                    <img src="images/employee 1.jpg" alt="Samuel Edorh" />
+                    <p>Samuel Edorh – CEO</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee 2.jpg" alt="Kindness Pokima" />
+                    <p>Kindness Pokima – Customer Support</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee 3.jpg" alt="Precious Nwaelele" />
+                    <p>Precious Nwaelele – Engineer</p>
+                </div>
+            </div>
+        </section>
+
+        <form>
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required />
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email</label>
+                    <input type="email" id="usermail" name="usermail" required />
+                </div>
+                <div class="form-item">
+                    <label>Reason for Contact:</label>
+                    <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required />
+                    <label for="general-inquiry">General Inquiry</label>
+
+                    <input type="radio" id="materials-question" name="purpose" value="Building Materials" />
+                    <label for="materials-question">Building Materials Question</label>
+
+                    <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion" />
+                    <label for="website-suggestion">Website Suggestion</label>
+
+                    <input type="radio" id="customer-review" name="purpose" value="Customer Review" />
+                    <label for="customer-review">Customer Review</label>
+                </div>
+                <div class="form-item">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="copyright"></span> 💫Swanzy Buildings💫 Nigeria</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://facebook"><img src="images/facebook.jpg" alt="Facebook" /></a>
+            <a href="https://instagram"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="https://threads"><img src="images/x.jpg" alt="Threads" /></a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById("copyright").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

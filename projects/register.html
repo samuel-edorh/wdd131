@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swanzy Buildings | Sign Up</title>
+    <meta name="description" content="Building Site" />
+    <meta name="author" content="Samuel Gbenga Edorh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/building.css" />
+    <script src="scripts/building.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo1.png" alt="Building Logo" loading="lazy" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="designs.html">Designs</a>
+            <a href="contacts.html">Contact Us</a>
+            <a href="register.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero-text">Swanzy Buildings</h2>
+    </section>
+
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required />
+                </div>
+                <div class="form-item column2">
+                    <label for="usermail">Email</label>
+                    <input type="email" id="usermail" name="usermail" required />
+                </div>
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="copyright"></span> 💫Swanzy Buildings💫 Nigeria</p>
+        <p id="lastModified"></p>
+        <nav>
+            <a href="https://facebook"><img src="images/facebook.jpg" alt="Facebook" /></a>
+            <a href="https://instagram"><img src="images/instagram.jpg" alt="Instagram" /></a>
+            <a href="https://threads"><img src="images/x.jpg" alt="Threads" /></a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById("copyright").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

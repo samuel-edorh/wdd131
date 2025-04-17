@@ -1,0 +1,285 @@
+/* Reset some defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bona Nova SC', serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+/* Grid section on Home */
+.grid-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.grid-layout section {
+    flex: 1;
+    min-width: 300px;
+    background: #eee;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.grid-layout img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cta {
+    background-color: #f5f5f5;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.cta-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cta-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #ff914d;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6a00;
+}
+
+.cta-button:hover {
+    background-color: #ff6a00;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.designs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.designs article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.designs article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.designs article h2 {
+    margin-bottom: 0.5rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-item {
+    margin-bottom: 1rem;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+button {
+    background-color: #222;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+.employee-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.employee {
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+footer nav img {
+    width: 30px;
+    margin: 0 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-layout {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+    }
+}
